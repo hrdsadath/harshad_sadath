@@ -60,11 +60,11 @@ export default function About() {
         description={about.description}
         path={about.path}
         image={ "/images/image.jpg"}
-        author={{
-          name: person.name,
-          url: `${baseURL}${about.path}`,
-          image: `${baseURL}${person.avatar}`,
-        }}
+        // author={{
+        //   name: person.name,
+        //   url: `${baseURL}${about.path}`,
+        //   image: `${baseURL}${person.avatar}`,
+        // }}
       />
       {about.tableOfContent.display && (
         <Column
