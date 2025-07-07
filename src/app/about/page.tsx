@@ -59,7 +59,7 @@ export default function About() {
         title={about.title}
         description={about.description}
         path={about.path}
-        image={`${baseURL}/og?title=${encodeURIComponent(about.title)}`}
+        image={ "/images/image.jpg"}
         author={{
           name: person.name,
           url: `${baseURL}${about.path}`,
