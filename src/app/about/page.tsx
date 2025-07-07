@@ -53,19 +53,19 @@ export default function About() {
   ];
   return (
     <Column maxWidth="m">
-      <Schema
+      {/* <Schema
         as="webPage"
         baseURL={baseURL}
         title={about.title}
         description={about.description}
         path={about.path}
         image={ "/images/image.jpg"}
-        // author={{
-        //   name: person.name,
-        //   url: `${baseURL}${about.path}`,
-        //   image: `${baseURL}${person.avatar}`,
-        // }}
-      />
+        author={{
+          name: person.name,
+          url: `${baseURL}${about.path}`,
+          image: `${baseURL}${person.avatar}`,
+        }}
+      /> */}
       {about.tableOfContent.display && (
         <Column
           left="0"
@@ -90,7 +90,7 @@ export default function About() {
             flex={3}
             horizontal="center"
           >
-            <Avatar src={person.avatar} size="xl" />
+            <Avatar src={ "/images/image.jpg"} size="xl" />
             <Flex gap="8" vertical="center">
               <Icon onBackground="accent-weak" name="map-pin" />
               {person.location}
